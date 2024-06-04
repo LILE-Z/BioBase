@@ -40,7 +40,7 @@ export default function RootLayout() {
             name="index"
             options={{
               title: "Login",
-              headerShown: true,
+              headerShown: false,
               headerTitle: "Home",
               headerStyle: {
                 backgroundColor: "#f4511e",

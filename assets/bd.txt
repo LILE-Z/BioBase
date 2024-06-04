@@ -1,6 +1,10 @@
 CREATE TABLE users (
-    celular TEXT PRIMARY KEY,
+    telefono TEXT PRIMARY KEY,
     nombre TEXT,
     password TEXT,
-    seccion BOOLEAN
+    sesion BOOLEAN
 );
+-- Insertar registros de ejemplo en la tabla "users"
+INSERT INTO users (telefono, nombre, password,  sesion) VALUES
+    ('1234567890', 'Juan Perez', 'password123', 0),
+    ('9876543210', 'Maria Gomez', 'qwerty', 0);
