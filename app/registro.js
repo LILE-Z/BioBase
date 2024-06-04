@@ -130,8 +130,7 @@ function Registro() {
             />
           </View>
           <View style={styles.inputContainer}>
-            
-            <FontAwesome name="lock" size={20} color="#333" style={styles.icon} />
+          <MaterialIcons name="password" size={24} color="black" style={styles.icon}/> 
             <TextInput
               placeholder="Confirmar contraseña"
               secureTextEntry
@@ -172,10 +171,11 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
     borderRadius: 5,
     marginBottom: 10,
     paddingLeft: 10,
+    paddingBottom: 5,
   },
   icon: {
     marginRight: 10,

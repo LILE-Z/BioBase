@@ -4,7 +4,7 @@ import {Text,View,StyleSheet} from 'react-native'
 export  default App = () => {
  <View style={styles.container
  }>
-   <Text style={styles.title}  > Screen 1</Text>
+   <Text style={styles.title}  >Oseo</Text>
     </View>
 
 }

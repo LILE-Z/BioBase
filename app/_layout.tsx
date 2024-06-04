@@ -48,7 +48,7 @@ export default function RootLayout() {
             }}
           />
           <Drawer.Screen
-            name="scn1"
+            name="respiratorio"
             options={{
               title: "Screen 1",
               headerShown: true,
