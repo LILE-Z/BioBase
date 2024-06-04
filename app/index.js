@@ -82,7 +82,7 @@ function LoginScreen() {
   );
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <ImageBackground
         source={{ uri: 'https://i.pinimg.com/originals/21/3b/c4/213bc40505d3b688624e38521fa92a85.jpg' }}
         style={styles.backgroundImage}
@@ -131,7 +131,7 @@ function LoginScreen() {
           </Text>
         </View>
       </ImageBackground>
-    </SafeAreaView>
+    </View>
   );
 }
 

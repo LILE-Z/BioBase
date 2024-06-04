@@ -10,7 +10,6 @@ import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import "react-native-reanimated";
-
 import { useColorScheme } from "@/hooks/useColorScheme";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -39,22 +38,81 @@ export default function RootLayout() {
           <Drawer.Screen
             name="index"
             options={{
-              title: "Login",
+              drawerItemStyle: {
+                display: "none",
+              },
               headerShown: false,
-              headerTitle: "Home",
+            }}
+          />
+          <Drawer.Screen
+            name="registro"
+            options={{
+              drawerItemStyle: {
+                display: "none",
+              },
+              headerShown: false,
+            }}
+          />
+          <Drawer.Screen
+            name="+not-found"
+            options={{
+              drawerItemStyle: {
+                display: "none",
+              },
+            }}
+          />
+          <Drawer.Screen
+            name="menu"
+            options={{
+              title: "Menu",
+              headerShown: true,
+              headerTitle: "Menu",
               headerStyle: {
-                backgroundColor: "#f4511e",
+                backgroundColor: "#9ecac9",
               },
             }}
           />
           <Drawer.Screen
             name="respiratorio"
             options={{
-              title: "Screen 1",
+              title: "Respiratorio",
               headerShown: true,
-              headerTitle: "Screen 1",
+              headerTitle: "Respiratorio",
               headerStyle: {
-                backgroundColor: "#f4511e",
+                backgroundColor: "#f0d9e5",
+              },
+            }}
+          />
+          <Drawer.Screen
+            name="digestivo"
+            options={{
+              title: "Digestivo",
+              headerShown: true,
+              headerTitle: "Digestivo",
+              headerStyle: {
+                backgroundColor: "#e0f0d9",
+              },
+            }}
+          />
+          <Drawer.Screen
+            name="nervioso"
+            options={{
+              title: "Nervioso",
+              headerShown: true,
+              headerTitle: "Nervioso",
+              headerStyle: {
+                backgroundColor: "#d9e5f0",
+              },
+            }}
+          />
+          <Drawer.Screen
+            name="oseo"
+            options={{
+              title: "Oseo",
+              headerShown: true,
+              headerTitle: "Oseo",
+              headerStyle: {
+                backgroundColor: "#f0e9d9",
               },
             }}
           />

@@ -28,7 +28,6 @@ function Registro() {
   const [telefono, setTelefono] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [direccion, setDireccion] = useState('');
   const router = useRouter();
 
   const handleSubmit = async () => {
@@ -67,7 +66,7 @@ function Registro() {
 
       // Insertar los datos del usuario en la base de datos
       await db.runAsync(
-        'INSERT INTO users (nombre, telefono, password,sesion) VALUES (?, ?, ?, ?, ?)',
+        'INSERT INTO users (nombre, telefono, password,sesion) VALUES (?, ?, ?, ?)',
         [nombre, telefono, password, 0]
       );
 
