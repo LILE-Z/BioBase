@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/images/bioBase.png",
       "resizeMode": "contain",
-      "backgroundColor": "black"
+      "backgroundColor": "#000000"
     },
     "ios": {
       "supportsTablet": true
@@ -18,7 +18,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/bioBase.png",
-        "backgroundColor": "#fff"
+        "backgroundColor": "#000000"
       },
       "package": "com.ethanzzz.BioBase"
     },

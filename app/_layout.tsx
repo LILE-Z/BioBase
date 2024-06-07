@@ -116,6 +116,17 @@ export default function RootLayout() {
               },
             }}
           />
+          <Drawer.Screen
+            name="user"
+            options={{
+              title: "User",
+              headerShown: true,
+              headerTitle: "User",
+              headerStyle: {
+                backgroundColor: "#b0d5de",
+              },
+            }}
+          />
         </Drawer>
       </GestureHandlerRootView>
     </ThemeProvider>
