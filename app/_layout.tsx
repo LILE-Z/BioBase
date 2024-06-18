@@ -127,6 +127,28 @@ export default function RootLayout() {
               },
             }}
           />
+          <Drawer.Screen
+            name="game"
+            options={{
+              title: "Game",
+              headerShown: true,
+              headerTitle: "Game",
+              headerStyle: {
+                backgroundColor: "#b0d5de",
+              },
+            }}
+          />
+          <Drawer.Screen
+            name="quiz"
+            options={{
+              title: "Quiz",
+              headerShown: true,
+              headerTitle: "Quiz",
+              headerStyle: {
+                backgroundColor: "#e0f0d9",
+              },
+            }}
+          />
         </Drawer>
       </GestureHandlerRootView>
     </ThemeProvider>

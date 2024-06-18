@@ -4,7 +4,7 @@ import { SQLiteProvider, useSQLiteContext } from 'expo-sqlite';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useIsFocused } from '@react-navigation/native';
 import { useRouter } from 'expo-router';
-
+import { Entypo } from '@expo/vector-icons';
 export default function App() {
   return (
     <Suspense fallback={<Text>Loading...</Text>}>
@@ -104,23 +104,33 @@ function ProfileScreen() {
             </ScrollView>
           </View>
         )}
-        <View style={styles.contactContainer}>
-          <Text style={styles.contactTitle}>Atención al cliente y dudas:</Text>
-          <Text style={styles.contactName}>Daniel Méndez Juárez</Text>
-          <Text style={styles.contactAddress}>Dirección: CBTis 260, Av. 117 Pte. 706, Guadalupe Hidalgo, 72480 Heroica Puebla de Zaragoza, Pue.</Text>
-          <TouchableOpacity
-            style={styles.contactPhone}
-            onPress={() => {
-              if (Platform.OS === "android") {
-                Linking.openURL("tel:2225967748");
-              } else {
-                Linking.openURL("telprompt:2225967748");
-              }
-            }}
-          >
-            <Text style={styles.contactPhoneText}>Teléfono: 2225967748</Text>
-          </TouchableOpacity>
-        </View>
+ <View style={styles.contactContainer}>
+  <Text style={styles.contactTitle}>Atención al cliente y dudas:</Text>
+  <Text style={styles.contactName}>Daniel Méndez Juárez</Text>
+  <Text style={styles.contactAddress}>Dirección: CBTis 260, Av. 117 Pte. 706, Guadalupe Hidalgo, 72480 Heroica Puebla de Zaragoza, Pue.</Text>
+  <View style={styles.contactActions}>
+    <TouchableOpacity
+      style={styles.contactPhone}
+      onPress={() => {
+        if (Platform.OS === "android") {
+          Linking.openURL("tel:2225967748");
+        } else {
+          Linking.openURL("telprompt:2225967748");
+        }
+      }}
+    >
+      <Text style={styles.contactPhoneText}>Teléfono: 2225967748</Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      style={styles.contactFacebook}
+      onPress={() => {
+        Linking.openURL("https://www.facebook.com/profile.php?id=100048978582597&mibextid=ZbWKwL");
+      }}
+    >
+    <Entypo name="facebook" size={24} color="black" />
+    </TouchableOpacity>
+  </View>
+</View> 
       </SafeAreaView>
     </ImageBackground>
   );
@@ -228,12 +238,19 @@ const styles = StyleSheet.create({
     color: '#333',
     marginBottom: 5,
   },
-  contactPhone: {
-    marginTop: 10,
-  },
-  contactPhoneText: {
-    fontSize: 16,
-    color: '#a99ca2',
-    textDecorationLine: 'underline',
-  },
+ contactPhone: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginTop: 10,
+},
+contactPhoneText: {
+  fontSize: 16,
+  color: '#a99ca2',
+  textDecorationLine: 'underline',
+  marginRight: 10,
+},
+contactFacebook: {
+  marginLeft: 200,
+  top: -22,
+}, 
 });
