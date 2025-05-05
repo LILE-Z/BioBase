@@ -1,50 +1,49 @@
-# Welcome to your Expo app 👋
+# 🎉 Welcome to BioBase! 🌱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Hey there! 👋 This is **BioBase**, a fun little project where I tried to learn **React Native** with **TypeScript** while making learning about the human body more interactive and exciting. 🚀 Let's dive into what this project is all about!
 
-## Get started
+---
 
-1. Install dependencies
+## 🧠 What's the Idea?
 
+The goal here was simple: **learn React Native + TypeScript** while creating something that makes exploring the human body systems fun and educational. Instead of boring textbook diagrams, why not make it **interactive and customizable**? 🤔
+
+---
+
+## ✨ Cool Features
+
+Here’s what makes BioBase awesome:
+
+- 🎥 **Video Integration**: Watch videos (like the Digestive System) directly in the app. Learning by visuals is the best! 📽️
+- 🎤 **Text-to-Speech**: Don’t feel like reading? Let the app read out the content for you! Supports Spanish. 🗣️
+- 🎨 **Customizable Themes**: Change font size and background colors (White, Black, or Sepia) to make reading easier and more comfortable. 🖌️
+- 🗂️ **Multiple Body Systems**: Explore systems like Digestive, Nervous, Respiratory, and more with simple navigation. 🩻
+- 📖 **Interactive Content**: Scroll through rich content, with images and descriptions for each body system. 🖼️
+- 🎮 **Games & Quizzes**: Play games and take quizzes to test your knowledge. 🧩
+
+---
+
+## 🚀 How to Start?
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/LILE-Z/BioBase.git
+   ```
+2. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+3. Run the app:
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Built With
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **React Native** + **TypeScript** 🛠️
+- **Expo**: Making mobile dev super smooth.
+- **expo-av**: For video playback.
+- **expo-speech**: For text-to-speech magic.
+- **expo-router**: Easy navigation with file-based routing.
